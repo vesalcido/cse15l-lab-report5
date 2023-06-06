@@ -109,10 +109,12 @@ fi
  * The command line that triggers the bug first opening the terminal was:
  ```
  java buglab
- 
  ```
  * A description of what to edit to fix the bug
- The bug that was found in the initial file was that fact that the y variable was set to 0, and the user was trying to divide x by y, but that would throw an error since we wouldn't be able to divide by 0, its not possible. The couple of ways that could have fixed the error would have been to make both x and y not equal to zero or make x zero and y a non-zero number. By doing these alternative ways, the code would be able to divide just fine.
+The bug that was found in the initial file was that fact that the y variable was set to 0, and the user was trying to divide x by y, but that would throw an error since we wouldn't be able to divide by 0, its not possible. The couple of ways that could have fixed the error would have been to make both x and y not equal to zero or make x zero and y a non-zero number. By doing these alternative ways, the code would be able to divide just fine and would output in the terminal:
+ ```
+ Result = 0
+ ```
 
 ## Part 2: Reflection
 *
