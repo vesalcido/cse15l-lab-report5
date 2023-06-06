@@ -17,6 +17,7 @@ Result: 0
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 * The failure-inducing context would be my actual my `buglab.java` file that I'm trying to run from my terminal:
+
 ```
 public class buglab 
 {
@@ -31,6 +32,7 @@ public class buglab
 }
 ```
 * Along with my buglab.java file, I also have a bash script called `error.sh` that looks like this:
+
 ```
 javac ErrorExample.java
 
@@ -43,7 +45,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Compilation failed. Please fix the errors in your code."
 fi
-
 ```
 * The last few commands that I ended up running were:
 ```
