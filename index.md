@@ -4,15 +4,15 @@
 * The environment that I am currently using is a Macbook Pro 2020 on Visual Studio Code. I'm trying to run my `buglab.java` file from my terminal, which also includes a bash script called `error.sh`.
 
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
-* The symptom I'm seeing right now is that my file is compliing, but when I try to run it, there seems to be an error within my code that isn't outputing the right result.
+* The symptom I'm seeing right now is that my file is compiling, but when I try to run it, there seems to be an error within my code that isn't outputing the right result.
 ```
 veraniasalcidodale@Favorites-MacBook-Pro labreport5 % java buglab
 Exception in thread "main" java.lang.ArithmeticException: / by zero
         at buglab.main(buglab.java:7)
 ```
-* The expected code that I would want is
+* The expected code that I would want is:
 ```
-Result: 5
+Result: 0
 ```
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
@@ -55,6 +55,13 @@ veraniasalcidodale@Favorites-MacBook-Pro labreport5 % java buglab
 Exception in thread "main" java.lang.ArithmeticException: / by zero
         at buglab.main(buglab.java:7)
 ```
+## TA Response:
+* hi! This bug sounds a bit tricky, but I think you might want to look within your `buglab.java` file and look closely within     the math that you are doing there. Maybe it could seem that a wrong operation was done.
+  Hopefully this might help your error!
+
+## Output showing student taking advice of TA
+![Image](one.png)
+![Image](two.png)
 
 ## Part 2: Reflection
 *
