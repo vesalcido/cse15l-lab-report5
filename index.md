@@ -1,4 +1,4 @@
-# Lab Report 5 hjsHJAH
+# Lab Report 5
 ## Part 1: Debugging
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 * The environment that I am currently using is a Macbook Pro 2020 on Visual Studio Code. I'm trying to run my `buglab.java` file from my terminal, which also includes a bash script called `error.sh`.
