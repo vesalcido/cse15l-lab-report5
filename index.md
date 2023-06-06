@@ -32,16 +32,13 @@ public class buglab
 ```
 * Along with my buglab.java file, I also have a bash script called `error.sh` that looks like this:
 ```
-#!/bin/bash
-
-# Compile the Java code
 javac ErrorExample.java
 
-# Check if the compilation was successful
+
 if [ $? -eq 0 ]; then
     echo "Compilation successful. Running the program..."
     
-    # Run the Java program
+    
     java ErrorExample
 else
     echo "Compilation failed. Please fix the errors in your code."
@@ -91,16 +88,13 @@ It's illegal!
  ```
  * This is what error.sh bash script looked like:
  ```
- #!/bin/bash
-
-# Compile the Java code
 javac buglab.java
 
-# Check if the compilation was successful
+
 if [ $? -eq 0 ]; then
     echo "Compilation successful. Running the program..."
     
-    # Run the Java program
+    
     java buglab
 else
     echo "Compilation failed. Please fix the errors in your code."
