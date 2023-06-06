@@ -88,9 +88,10 @@ It's illegal!
 
  ```
  * This is what error.sh bash script looked like:
+
+
  ```
 javac buglab.java
-
 
 if [ $? -eq 0 ]; then
     echo "Compilation successful. Running the program..."
@@ -101,7 +102,10 @@ else
     echo "Compilation failed. Please fix the errors in your code."
 fi
  ```
+ 
  * The command line that triggers the bug first opening the terminal was:
+
+
  ```
  java buglab
  ```
