@@ -117,4 +117,4 @@ The bug that was found in the initial file was that fact that the y variable was
  ```
 
 ## Part 2: Reflection
-*
+* Something pretty cool I learned in this class was learning what vim was and how to use it. At first, I was a little hesitant to actaully learn about it because I thought it was going to be super difficult to understand and pick up in lab, but once we were introduced in lecture, I was pretty excited to actually go to lab and put it to use. When I got to the lab, the first thing we had to do was do the vim tutorial which I thought was the best part because it taught us some shortcuts that we could use throughtout the lab and possibly in the future. My favorite one was deleting which can be done by pressing `X` because all you had to do was press down on the key, nothing extra to do. I also enjoyed Joe talking about vim memes about how exiting vim was a huge joke online which was fun to chuckle about in class. Overall, I think vim was my favorite lesson to just have a simple lesson on how to naviaget a new language through our visual code studio terminal.
