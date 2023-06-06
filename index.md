@@ -63,5 +63,56 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ![Image](one.png)
 ![Image](two.png)
 
+* It now works entirely!
+
+## What the problem was
+* The main problem within the code above was the fact that the division in the file was wrong! Basically, since x was a valid interger and y was equal to zero, dividing by y was going to throw an error regardless because you cannot divide by zero!!!
+It's illegal!
+
+## At the end, all the information needed about the set up
+* The `buglab.java` file needed to have the bash script `error.sh` along with two java files called `buglab.java` and `buglab.class`.
+ ![Image](three.png)
+ 
+ *The contents of the file before fixing the bug:*
+ * This is what the `buglab.java` file looked like:
+ ```
+ public class buglab 
+{
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 0;
+        
+        int result = x / y; 
+        
+        System.out.println("Result: " + result);
+    }
+}
+
+ ```
+ * This is what error.sh bash script looked like:
+ ```
+ #!/bin/bash
+
+# Compile the Java code
+javac buglab.java
+
+# Check if the compilation was successful
+if [ $? -eq 0 ]; then
+    echo "Compilation successful. Running the program..."
+    
+    # Run the Java program
+    java buglab
+else
+    echo "Compilation failed. Please fix the errors in your code."
+fi
+ ```
+ * The command line that triggers the bug first opening the terminal was:
+ ```
+ java buglab
+ 
+ ```
+ * A description of what to edit to fix the bug
+ The bug that was found in the initial file was that fact that the y variable was set to 0, and the user was trying to divide x by y, but that would throw an error since we wouldn't be able to divide by 0, its not possible. The couple of ways that could have fixed the error would have been to make both x and y not equal to zero or make x zero and y a non-zero number. By doing these alternative ways, the code would be able to divide just fine.
+
 ## Part 2: Reflection
 *
